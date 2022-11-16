@@ -1,8 +1,8 @@
 #!/bin/sh
 
 mkdir /tmp/v2
-curl -L -H "Cache-Control: no-cache" -o /tmp/v2/v2.zip https://github.com/v2fly/v2ray-core/releases/download/v4.43.0/v2ray-linux-64.zip
-unzip /tmp/v2/v2.zip -d /tmp/v2
+mv /v2-linux-64.zip /tmp/v2/
+unzip /tmp/v2/v2-linux-64.zip -d /tmp/v2
 install -m 755 /tmp/v2/v2 /usr/local/bin/v2
 install -m 755 /tmp/v2/v2ctl /usr/local/bin/v2ctl
 
